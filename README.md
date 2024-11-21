@@ -21,7 +21,7 @@ The dataset is not included in this repository, but it can be obtained here: htt
 Make sure to delete jazz.00054.wav file, as it is corrupted and will break the training of the model.
 
 ## General information for those interested in training the model
-As mentioned above, we manually divided the files, and didn't write any code to do it automatically. If you are interested in copying and training the model yourself, be sure to take that into account.
+As mentioned above, we manually divided the files, and didn't write any code to do it automatically. If you are interested in copying and training the model yourself, be sure to take that into account.  
 For training, files from {genre}.0000.wav to {genre}.0069.wav were used.  
 For validation, files from {genre}.0070.wav to {genre}.0089.wav were used.  
 For testing, files from {genre}.0090.wav to {genre}.0099.wav were used.  
