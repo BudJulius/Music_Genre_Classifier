@@ -34,11 +34,11 @@ We trained the model with trimmed song duration to 15 seconds and 50 epochs. The
 ## Usage
 Python kernel used - 3.12.3.  
 Install the required modules.  
-'''
+```
 conda install pytorch torchvision torchaudio -c pytorch  
 conda install numpy matplotlib seaborn scikit-learn  
 conda install -c conda-forge librosa  
-'''  
+```   
   
 The "visualizations.ipynb" notebook can be run out of the box - the model and files are included, as well as training history.  
 To run the "modelTrainer.ipynb", you first need to download the GTZAN dataset and divide the dataset into training, validation and testing sets (explained above).
