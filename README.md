@@ -28,7 +28,17 @@ For testing, files from {genre}.0090.wav to {genre}.0099.wav were used.
 Make sure to test the model only on the testing files.
 
 ## Results
-We trained the model with trimmed song duration to 15 seconds and 50 epochs. The average testing accuracy is around 60%.
+We trained the model with trimmed song duration to 15 seconds and 50 epochs. The average testing accuracy is around 60%. We got best results using 15 second duration and 50 epochs. 30 and 70 epochs, as well as 30 and 20 seconds duration only overcomplicated the model, ending in worse perfmance and long training times.
 
 
 ## Usage
+Python kernel used - 3.12.3.  
+Install the required modules.  
+'''
+conda install pytorch torchvision torchaudio -c pytorch  
+conda install numpy matplotlib seaborn scikit-learn  
+conda install -c conda-forge librosa  
+'''  
+  
+The "visualizations.ipynb" notebook can be run out of the box - the model and files are included, as well as training history.  
+To run the "modelTrainer.ipynb", you first need to download the GTZAN dataset and divide the dataset into training, validation and testing sets (explained above).
